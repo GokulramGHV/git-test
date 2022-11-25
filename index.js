@@ -1,6 +1,28 @@
 var fileNames = [{name: `sample.md`, content:`## Hello world`},{name: `nithin.md`, content:`Hi i am nithin balaji. Student at SSN. I love coding. I am in my third year
 
 ![img](https://repository-images.githubusercontent.com/373582499/876f9800-c4be-11eb-9111-ecf555718c39)
+`},{name: `sample2.md`, content:`## Code
+
+Inline `code`
+
+Indented code
+
+    // Some comments
+    line 1 of code
+    line 2 of code
+    line 3 of code
+
+
+Block code "fences"
+
+```
+Sample text here...
+```
+
+## Images
+![Minion](https://octodex.github.com/images/minion.png)
+
+
 `},] 
 
 var converter = new showdown.Converter();
