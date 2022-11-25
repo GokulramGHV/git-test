@@ -8,8 +8,9 @@ for obj in scandir("intros/"):
         fileObjString += f"{{name: `{obj.name}`, content:`{md_file.read()}`}},"
         md_file.close()
 fileObjString += "] \n\n"
-f = open("index.js", 'r+')
-c = f.read()
-f.seek(0,0)
+f_init = open("index_init.js")
+c = f_init.read()
+f_init.close()
+f = open("index.js", 'w')
 f.write(fileObjString + c)
 f.close()
