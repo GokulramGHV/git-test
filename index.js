@@ -3,23 +3,6 @@ var fileNames = [{name: `sample.md`, content:`## Hello world`},{name: `nithin.md
 ![img](https://repository-images.githubusercontent.com/373582499/876f9800-c4be-11eb-9111-ecf555718c39)
 `},] 
 
-var fileNames = [{name: `sample.md`, content:`## Hello world`},{name: `nithin.md`, content:`Hi i am nithin balaji. Student at SSN. I love coding. I am in my third year
-
-![img](https://repository-images.githubusercontent.com/373582499/876f9800-c4be-11eb-9111-ecf555718c39)
-`},] 
-
-var fileNames = [{name: `sample.md`, content:`## Hello world`},{name: `nithin.md`, content:`Hi i am nithin balaji. Student at SSN. I love coding. I am in my third year
-
-[!img](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.healthcareitnews.com%2Fnews%2Fopen-source-ai-voice-assistant-takes-aim-amazon-and-google&psig=AOvVaw3ELE42HUG-US2jhLprUTz0&ust=1669439146981000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIiP-M3HyPsCFQAAAAAdAAAAABAD)`},] 
-
-var fileNames = [{name: `sample.md`, content:`## Hello world`},{name: `nithin.md`, content:`Hi i am nithin balaji. Student at SSN. I love coding. I am in my third year
-
-[!img](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.healthcareitnews.com%2Fnews%2Fopen-source-ai-voice-assistant-takes-aim-amazon-and-google&psig=AOvVaw3ELE42HUG-US2jhLprUTz0&ust=1669439146981000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIiP-M3HyPsCFQAAAAAdAAAAABAD)`},] 
-
-var fileNames = [{name: `nithin.md`, content:`Hi i am nithin balaji. Student at SSN. I love coding. I am in my third year
-
-[!img](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.healthcareitnews.com%2Fnews%2Fopen-source-ai-voice-assistant-takes-aim-amazon-and-google&psig=AOvVaw3ELE42HUG-US2jhLprUTz0&ust=1669439146981000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIiP-M3HyPsCFQAAAAAdAAAAABAD)`},{name: `sample.md`, content:`## Hello world`},] 
-
 var converter = new showdown.Converter();
 for (let i = 0; i < fileNames.length; i++) {
   fileNames[i].content = converter.makeHtml(fileNames[i].content);
