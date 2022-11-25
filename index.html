@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Procode Git Session</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+    <style>
+      .shadow-filter {
+        filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.15))
+          drop-shadow(0px 25px 30px rgba(0, 0, 0, 0.35));
+      }
+
+      .text-shadow-lg {
+        text-shadow: 2px 15px 30px rgba(0, 0, 0, 0.3),
+          0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .selected {
+        border-width: 2px;
+        border-color: rgb(59, 130, 246);
+        border-radius: 8px;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="./index.js" type="text/babel"></script>
+  </body>
+</html>

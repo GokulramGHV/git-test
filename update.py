@@ -1,18 +1,15 @@
 from os import scandir
 
-UPDATING_MD_FILE = "README.md"
-
-files = []
+fileObjString = "var fileNames = ["
 
 for obj in scandir("intros/"):
     if not obj.is_dir():
-        files.append(obj.name)
-
-f = open("README.md", 'w')
-
-write_str = "# List of people who contributed: \n"
-
-for file in files:
-    write_str += f"- ### [{file[:len(file) - 3]}](intros/{file})\n"
-f.write(write_str)
+        md_file = open(f"intros/{obj.name}")
+        fileObjString += f"{{name: `{obj.name}`, content:`{md_file.read()}`}},"
+        md_file.close()
+fileObjString += "] \n\n"
+f = open("index.js", 'r+')
+c = f.read()
+f.seek(0,0)
+f.write(fileObjString + c)
 f.close()
